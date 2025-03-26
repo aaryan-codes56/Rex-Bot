@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rex Bot</title>
+
+    <!-- Linking Google Fonts for Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:wght,FILL,GRAD@400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <!-- Showdown.js for Markdown parsing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+
+    <!-- Prism.js for syntax highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script></head>
+<body>
+    <div class="chatbot-popup">
+        
+        <!-- Chatbot Header -->
+        <div class="chat-header">
+            <div class="header-info">
+                <img class="rex-logo" src="rexbot.png" width="50" height="50" alt="">
+                <h2 class="logo-text">Rex.io</h2>
+            </div>
+            <button id="close-chatbot" class="material-symbols-rounded">keyboard_arrow_down</button>
+        </div>
+
+        <!-- Chatbot Body -->
+        <div class="chat-body">
+            <!-- Bot's Welcome Message -->
+            <div class="message bot-message">
+                <img class="bot-avatar" src="rexbot.png" width="50" height="50" alt="">
+                <div class="message-text">
+                    Hey there!<br> I'm Rex, How can I help you today?
+                </div>
+            </div>
+
+            <!-- Placeholder for future messages (added dynamically) -->
+        </div>
+
+        <!-- Chatbot Footer -->
+        <div class="chat-footer">
+            <form action="#" class="chat-form">
+                <textarea placeholder="Message..." class="message-input" required></textarea>
+                <div class="chat-controls">
+                    <button type="button" class="material-symbols-rounded">sentiment_satisfied</button>
+                    <button type="button" class="material-symbols-rounded">attach_file</button>
+                    <button type="submit" id="send-message" class="material-symbols-rounded">arrow_upward</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
